@@ -1,0 +1,28 @@
+1. https://etherscan.io/address/0x4c7436641da0505a8012218c1524db0060fd7253#code      
+File 11 of 159 : LibEncodedDispatch.sol    0.8.18 library
+
+2. https://etherscan.io/address/0x4d69ec4d0112e42c385b5ccb6897ccdfeafc3136#code
+File 10   struct interface 0.8.18
+
+2. https://etherscan.io/address/0x4d69ec4d0112e42c385b5ccb6897ccdfeafc3136#code
+file 23    //interface 0.8.18
+https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code   file 13 interface 0.8
+
+4.  https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code
+file 5 interface
+
+https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code  file 8  abstract 0.8.0
+https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code  file 14 abstract 0.8.0
+
+https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code  file 10 Timer Timstamps constructor
+
+https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code  file 20 Library 0.8.0   , file 24 Abicoder v2,  file 29 interface 0.8.0, file 31 abstract 0.8.0, file 47 contract, file 94 library, file 95, 96, 97 ,99,112 interface,  file 110 contract, 
+(file 118, 120,126 (import MultiRole) ce fichier contient une classe PARENT Heritage 0.8.0) 
+
+https://etherscan.io/address/0xb06c61fcc074efb8cf7fd707bc3bd8ab1aa5a4e9#code  file 115 library 0.6.2,
+
+
+
+
+
+
