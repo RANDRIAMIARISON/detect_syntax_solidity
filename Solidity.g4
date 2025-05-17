@@ -29,9 +29,10 @@ reentrancyType
     | 'safe'
     ;
 
-pragmaDirective : 'pragma' (pragmaSolidity | pragmaExperimental) ';' ;
+pragmaDirective : 'pragma' (pragmaSolidity | pragmaExperimental| pragmaAbicoder) ';' ;
 
 pragmaSolidity : 'solidity' version+;
+pragmaAbicoder :  'abicoder' 'v2';
 
 pragmaExperimental : 'experimental' expression;
 
@@ -228,6 +229,7 @@ expression
     | expression '||' expression
     | expression '?' expression ':' expression
     | expression ('=' | lvalueOperator) expression
+    | expression '.' (identifier | AddressMember)
     | varDeclaration
     | variableDeclaration
     | uncheckedBlock
@@ -422,7 +424,7 @@ comparison : '==' | '!=' ;
 identifier
     : Identifier | placeholderStatement | 'value' | 'from' | 'this' | 'balance' | 'sender' | 'msg'
     | 'gas' | 'length' | 'block' | 'timestamp' | 'tx' | 'origin' | 'blockhash' | 'coinbase' | 'difficulty'
-    | 'gaslimit' | 'number' | 'data' | 'sig' | 'now' | 'gasprice' | 'emit' | 'constructor' | 'revert'
+    | 'gaslimit' | 'number' | 'data' | 'sig' | 'now' | 'gasprice' | 'emit' | 'constructor' | 'revert'|'abicoder'
     | 'solidity' | 'experimental' | 'calldata' | 'name' | 'creationCode' | 'runtimeCode'
     | 'abstract' | 'virtual' | 'override' | 'fallback' | 'receive' | 'try' | 'catch' | 'leave' ;
     // last line are keywords in 0.6.0 but added to identifier for compatibility
@@ -671,3 +673,14 @@ WS : [ \t\r\n\u000C]+ -> skip ;
 COMMENT : '/*' .*? ('*/'|EOF) -> channel(HIDDEN) ;
 
 LINE_COMMENT : '//' ~[\r\n]* -> channel(HIDDEN) ;
+
+AddressMember
+  : 'balance'
+  | 'transfer'
+  | 'send'
+  | 'call'
+  | 'delegatecall'
+  | 'staticcall'
+  | 'code'
+  | 'codehash'
+  ;
